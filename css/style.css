@@ -1,0 +1,538 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+h1, h2, h3, h4, h5, h6, p, span{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.t-left{
+    text-align: left;
+}
+.t-center{
+    text-align: center;
+}
+.t-right{
+    text-align: right;
+}
+.t-justify{
+    text-align: justify;
+}
+f-left{
+    float: left;
+}
+.f-right{
+    float: right;
+}
+.clear::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+.wrapper{
+    max-width: 95%;
+    margin: 0 auto;
+}
+button{
+    cursor: pointer;
+}
+/* header section  start*/
+.header-section{
+    background-color: rgb(255, 255, 255);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 99;
+    display: block;
+}
+/* header logo  */
+.header-logo{
+    width: 30%;
+    height: auto;
+    display: inline-block;
+}
+.header-logo img{
+    width: 90px;
+    height: auto;
+    margin-top: 10px;
+}
+/* header menu  */
+.header-menu{
+    width: 70%;
+    display: inline-block;
+}
+.header-menu ul{
+    text-align: right;
+}
+.header-menu ul li{
+    display: inline-block;
+    margin-left: -5px;
+}
+.header-menu ul li a{
+    font-size: 18px;
+    color: #000;
+    padding: 0px 20px;
+    line-height: 74px;
+    display: block;
+}
+/* header section end  */
+/* banner section  */
+.banner-section{
+    background-image: url(https://i.ibb.co/HdcQs3G/kobu-agency-IWLR561-Yb-MY-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 620px;
+    margin-top: 74px;
+    position: relative;
+    z-index: 1;
+}
+.banner-section::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.274);
+    z-index: -1;
+}
+.banner-section .banner-text{
+    padding-top: 195px;
+}
+.banner-section .banner-text h4{
+    font-size: 25px;
+    color: #fff;
+}
+.banner-section .banner-text h1{
+    font-size: 60px;
+    color: #fff;
+    margin-top: 35px;
+    margin-bottom: 40px;
+}
+.banner-section .banner-text a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #7d7d7d;
+    background-color: #fff;
+    padding: 15px 35px;
+    border-radius: 7px;
+    border: none;
+    display: inline-block;
+    margin-right: 15px;
+    position: relative;
+}
+.banner-section .banner-text a:hover{
+    background-color: #d3a920;
+    color: #fff;
+    transition: .4s;
+}
+/* price section  */
+.price-section{
+    background-color: #ebebeb;
+    padding: 35px 0px;
+}
+.price-top-text{
+    line-height: 80px;
+}
+.price-top-text h1{
+    font-size: 60px;
+    font-weight: 400;
+}
+.price-top-text h3{
+    font-size: 18px;
+    font-weight: 400;
+}
+/* price box  */
+.price-table{
+    width: 30.33%;
+    height: auto;
+    text-align: center;
+    display: inline-block;
+    margin: 0 1%;
+    box-shadow: 1px 1px 15px -5px #ddd;
+}
+.price-table .price-box{
+    display: block;
+    background-color: rgb(255, 255, 255);
+    max-width: 100%;
+    height: auto;
+    padding: 25px;
+    box-shadow: 1px 1px 15px -5px #ddd;
+    text-align: left;
+    line-height: 30px;
+    border-bottom: 1px solid #ddd;
+}
+.price-table .price-box:hover{
+    background-color: #e68f0c;
+    color: #fff;
+}
+.price-table .price-box h3{
+    font-size: 25px;
+    font-weight: 500;
+}
+.price-table .price-box p{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 13px 0px;
+    background-color: #cecbcb;
+    margin: 30px 0px;
+}
+.price-table .price-box p span{
+    font-size: 55px;
+    font-weight: bold;
+}
+.price-table .price-box h5{
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+.price-table .price-box h6{    
+    font-size: 21px;
+    font-weight: 400;
+}
+.price-table .price-btm-box{
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: left;
+    line-height: 23px;
+    padding-top: 50px;
+    background-color: #fff;
+}
+.price-table .price-btm-box:hover .table-btn a{
+    background-color: #e68f0c;
+    color: #fff;
+}
+.price-table .price-btm-box ul{
+    margin-left: 27px;
+}
+.price-table .price-btm-box ul li{
+    display: block;
+    list-style-type: none;
+    font-size: 22px;
+    line-height: 70px;
+    color: #768296;
+    font-weight: 400;
+}
+.price-table .price-btm-box ul li span{
+    display: inline-block;
+    width: 38px;
+    height: 30px;
+    position: relative;
+    margin-right: 25px;
+}
+.price-table .price-btm-box ul li span img{
+    position: absolute;
+    top: 9px;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+.price-btm-box .table-btn{
+    text-align: center;
+    padding: 50px 0;
+    background-color: #fff;
+}
+.price-btm-box .table-btn a{
+    display: inline-block;
+    background-color: #fff;
+    color: #768296;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px 22px;
+    box-shadow: 2px 2px 15px 5px #ddd;
+    text-align: center;
+    border-radius: 5px;
+}
+ .price-table:hover .price-box{
+    color: #fff;
+    background-color: rgb(255, 153, 0);
+    transition: .5s;
+}
+ .price-table:hover .price-box p{
+    background-color: #fff;
+    color: rgb(255, 153, 0);
+    transition: .5s;
+}
+/* team section  */
+.team-section{
+    background-color: #fff;
+    padding: 100px 0px;
+}
+.team-section h1{
+    margin-bottom: 70px;
+    font-size: 37px;
+}
+.team-section .profile {
+    width: 280px;
+    height: 408px;
+    display: inline-block;
+    border: 2px solid #e79230;
+    margin: 10px;
+    padding: 6px;
+    position: relative;
+    
+}
+.team-section .profile::after{
+    background: none;
+    border: 2px solid #e79230;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    pointer-events: none;
+}
+.team-section .p-text h3{
+    font-size: 25px;
+    font-weight: 500;
+    padding-bottom: 20px;
+    padding-top: 25px;
+}
+.team-section .p-text{
+    margin-left: 25px;
+}
+.team-section .p-text h4{
+    font-size: 20px;
+    font-weight: 500;
+    color: #8f8798;
+    padding-bottom: 20px;
+}
+/* input section  */
+.input-section{
+    background-color: #f4f4f5;
+    padding: 100px 0px;
+}
+.input-section p{
+    font-weight: 500;
+    font-size: 18px;
+}
+.input-section h1{
+    font-size: 45px;
+    padding: 50px 0px;
+    font-weight: 500;
+}
+.input-section form input {
+    padding: 25px 20px;
+    display: block;
+    margin: 0 auto;
+    text-align: left;
+    width: 560px;
+    border-radius: 15px;
+    border:2px solid #bcc62b;
+    font-size: 20px;
+}
+.input-section form input:focus{
+    outline: 2px solid rgb(27, 119, 238);
+}
+.input-section a {
+    background-color: #a6932b;
+    color: #fff;
+    font-size: 22px;
+    padding: 20px 90px;
+    display: inline-block;
+    border-radius: 15px;
+    margin-top: 25px;
+    border: 1px solid #a6932b;
+}
+.input-section a:hover{
+    color: rgb(226, 160, 17);
+    background-color: #fff;
+    border: 1px solid rgb(226, 160, 17);
+}
+/* about-us section  */
+.about-us-section h1{
+    font-size: 55px;
+    padding-bottom: 35px;
+}
+.about-us-section .about-left{
+    width: 40%;
+    height: auto;
+    display: inline-block;
+}
+.about-us-section .about-right{
+    width: 55%;
+    height: auto;
+    display: inline-block;
+    position: relative;
+    padding: 35px 0px;
+    line-height: 35px;
+    color: #69696c;
+}
+.about-us-section .about-right .about-text{
+    margin-bottom: 30px;
+}
+.about-us-section .about-right .about-text span{
+    margin-right: 20px;
+}
+.about-us-section .about-right .about-text p{
+    font-weight: 500;
+    font-size: 17px;
+}
+/* feedback section  */
+.feedback-section{
+    background-color: #f5f5f5;
+    padding: 80px 0px;
+}
+.feedback-section p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.feedback-section h1{
+    font-size: 45px;
+    padding: 60px 0px;
+}
+.feedback-section .feedback-box{
+    width: 398px;
+    height: auto;
+    border: 2px solid #ddd;
+    background-color: #fff;
+    display: inline-block;
+    margin: 10px;
+    position: relative;
+    z-index: 1;
+}
+.feedback-section .feedback-box::before{
+    content: "\f10d";
+    position: absolute;
+    font:var(--fa-font-solid) ;
+    font-weight: 600;
+    width: 100px;
+    font-size: 100px;
+    color:#ebebeb;
+    top: 0px;
+    left: 35px;
+    z-index: -1;
+}
+.feedback-section .feedback-box::after{
+    content: "";
+    position: absolute;
+    z-index: 1;
+    top: 230px;
+    left: 210px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 30px 20px 0 20px;
+    border-color: #ffffff transparent transparent transparent;
+}
+.feedback-section .feedback-box p{
+    margin-left: 30px;
+    line-height: 30px;
+    color: #757f90;
+    font-size: 20px;
+    padding: 40px 10px;
+}
+.feedback-box .feed-frofile{
+    background-color: #f3f3f5;
+    padding: 35px 0px;
+    position: relative;
+}
+.feedback-box .feed-frofile .feed-img{
+    width: 90px;
+    height: 90px;
+    border: 10px solid #aa972c;
+    display: inline-block;
+    margin-left: 85px;
+}
+.feedback-box .feed-frofile .feed-text{
+    display: inline-block;
+    width: 150px;
+    height: auto;
+    font-size: 28px;
+    position: absolute;
+    top: 70px;
+    left: 215px;
+}
+.feedback-box .feed-frofile .feed-text h6{
+    font-weight: 500;
+    font-size: 20px;
+    color: #757f90;
+}
+/* contanct section  */
+.contact-section{
+    padding: 80px 0px;
+}
+.contact-section .contact-text{
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 30px;
+}
+.contact-section .contact-text h2{
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 35px;
+}
+.contact-section .contact-text span{
+    color: #757f90;
+    font-size: 20px;
+}
+.contact-section .from-box{
+    width: 840px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.contact-section .from-box form{
+    display: block;
+    width: 840px;
+}
+.contact-section .from-box form input:focus{
+    outline: 2px solid rgb(27, 119, 238);
+}
+.contact-section .from-box form textarea:focus{
+    outline: 2px solid rgb(27, 119, 238);
+}
+.contact-section .from-box form .full-width{
+    width: 800px;
+    display: inline-block;
+    border-radius: 15px;
+    border:1px solid #bcc62b;
+    font-size: 20px;
+    padding: 15px;
+}
+.contact-section .from-box form .width{
+    width: 390px;
+    display: inline-block;
+    margin: 25px 0px;
+    border-radius: 15px;
+    border:1px solid #bcc62b;
+    font-size: 20px;
+    padding: 15px 10px;
+}
+.contact-section .from-box form button{
+    background-color: #a6932b;
+    color: #fff;
+    font-size: 22px;
+    padding: 20px 90px;
+    display: inline-block;
+    border-radius: 15px;
+    border: none;
+    margin-top: 25px;
+    border: 1px solid #a6932b;
+}
+.contact-section .from-box form button:hover{
+    color: rgb(226, 160, 17);
+    background-color: #fff;
+    border: 1px solid rgb(226, 160, 17);
+}
+/* footer section  */
+.footer{
+    padding: 50px;
+    font-size: 20px;
+}
